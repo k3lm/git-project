@@ -272,3 +272,54 @@ section {
   margin: 0 0 64px;
   transition: all 0.7s ease;
 }
+
+// Footer
+
+footer {
+  display: flex;
+  margin: 26px 0;
+  position: relative;
+
+  .copyright {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $font-sans-serif;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  li {
+    font-size: 0;
+  }
+
+  i {
+    font-size: 20px;
+    color: white;
+    background: $color-two;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: relative;
+    transition: $transition;
+  }
+
+  i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  i:hover {
+    transform: scale(1.2);
+  }
+}
