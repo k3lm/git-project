@@ -6,6 +6,10 @@ $font-serif: 'Crimson Text', serif;
 $color-text-white: #f1f2f6;
 $color-text-dark: #2f3542;
 
+$color-one: #fed136;
+$color-two: #ffa502;
+
+$transition: all 0.5s ease;
 // Global
 *,
 *::before,
@@ -22,6 +26,15 @@ body {
   font-family: $font-serif;
 }
 
+// Splash section
+
+.splash {
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/XYgZ3qTG/pexels-g-l-i-k-2255355-1.jpg');
+  position: relative;
+  background-size: cover;
+}
+
 // Navbar
 
 .navbar {
@@ -35,7 +48,7 @@ body {
 
 .logo {
   font-family: $font-logo;
-  color: #fed136;
+  color: $color-one;
   text-decoration: none;
   font-size: 28px;
   letter-spacing: 0.1rem;
@@ -49,14 +62,57 @@ body {
   a {
     text-decoration: none;
     color: $color-text-white;
+    transition: $transition;
+  }
+
+  a:hover {
+    color: $color-one;
   }
 }
 
-// Splash section
+// Inner splash
 
-.splash {
-  height: 100vh;
-  background-image: url('https://i.postimg.cc/XYgZ3qTG/pexels-g-l-i-k-2255355-1.jpg');
-  position: relative;
-  background-size: cover;
+.splash-inner {
+  color: $color-text-white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.subheader {
+  font-family: $font-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.header {
+  font-family: $font-sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.button {
+  display: inline-block;
+  min-width: 240px;
+  margin: 24px auto 0;
+  padding: 16px;
+  border-radius: 10px;
+  font-family: $font-sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $color-two;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: $transition;
+  color: $color-text-white;
+}
+
+.button:hover {
+  background: darken($color-two, 5%);
+  color: $color-text-white;
+  transform: scale(1.05);
 }
