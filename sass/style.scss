@@ -1,0 +1,62 @@
+// Variables
+$font-logo: 'Lobster', cursive;
+$font-sans-serif: 'Lato', sans-serif;
+$font-serif: 'Crimson Text', serif;
+
+$color-text-white: #f1f2f6;
+$color-text-dark: #2f3542;
+
+// Global
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-serif;
+}
+
+// Navbar
+
+.navbar {
+  background: transparent;
+  padding-top: 20px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  font-family: $font-logo;
+  color: #fed136;
+  text-decoration: none;
+  font-size: 28px;
+  letter-spacing: 0.1rem;
+}
+
+.navigation-links {
+  font-family: $font-sans-serif;
+  color: $color-text-white;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $color-text-white;
+  }
+}
+
+// Splash section
+
+.splash {
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/XYgZ3qTG/pexels-g-l-i-k-2255355-1.jpg');
+  position: relative;
+  background-size: cover;
+}
